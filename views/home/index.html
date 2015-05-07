@@ -1,90 +1,135 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE HTML>
+<html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
-    <!-- Bootstrap -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link href="../../css/home.css" rel="stylesheet">
-
-    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title>网站标题，控制在25个字、50个字节以内</title>
+    <meta name="keywords" content="关键词,5个左右,单个8汉字以内">
+    <meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
+    <link rel="Bookmark" href="favicon.ico">
+    <link rel="Shortcut Icon" href="favicon.ico"/>
     <!--[if lt IE 9]>
-    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="../../lib/html5.js"></script>
+    <script type="text/javascript" src="../../lib/respond.min.js"></script>
+    <script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
     <![endif]-->
+    <link href="../../h-ui/css/H-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="../../h-ui/lib/iconfont/iconfont.css" rel="stylesheet" type="text/css"/>
+    <!--自己的样式-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="Lib/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('.pngfix,.icon');</script>
+    <![endif]-->
+    <link href="../../css/base.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="container-fill stickyheader">
-    <nav class="row header" style="margin-top: 0px;">
-        <div class="col-md-1"></div>
-        <div class="col-md-2 logo">
-            <a href="#top" class="gototop">
-                <img src="../../images/logo.png" alt="Magently">
-            </a>
+<header id="comminHeader">
+    <div id="headerBar">
+        <div class="text-l w-1000 Hui-wraper cl">
+            欢迎访问 BrnShop开源网上商城
+            <ul class="f-r">
+                <li><a href="/account/login?returnUrl=http%3A%2F%2Flocalhost%3A27008%2F">[登录]</a>
+                </li>
+                <li><a href="/account/register" class="A_b">[注册]</a>
+                </li>
+            </ul>
         </div>
-        <span class="col-md-5"></span>
-
-        <div class="col-md-1"><a href="#about" class="">请登录</a></div>
-        <div class="col-md-1"><a href="#team" class="active">注册</a></div>
-        <div class="col-md-1"><a href="#services" class="">帮助中心</a></div>
-        <div class="col-md-1"></div>
-    </nav>
-</div>
-<div class="container-full stickynvabar">
-    <nav class="row mynavbar">
-        <div class="col-md-1"></div>
-        <div class="col-md-1"><a href="#index">首页</a></div>
-        <div class="col-md-1"><a href="#about">上衣</a></div>
-        <div class="col-md-1"><a href="#team">裙装</a></div>
-        <div class="col-md-1"><a href="#services">裤装</a></div>
-        <div class="col-md-1"><a href="#pricing">内衣</a></div>
-        <div class="col-md-1"><a href="#whyus">配饰</a></div>
-        <div class="col-md-5"></div>
-    </nav>
-</div>
-<div id="content" class="container-full">
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div id="nav_left" class="col-md-3">
-            <div class="cata">
-                <div class="cata-group">
-                    <dl id="cata-group-1" class="cata-group-btn">
-                        <dt class="cata-group-head"><a class="title">上衣</a>
-                        <p><a>外套</a><a>大衣</a><a>风衣</a><a>毛衣</a><a>卫衣</a><a>羽绒</a><a>棉衣</a> <a>打底T</a><a>针织衫</a><a>衬衫</a><a>西装</a><a>短外套</a>
-                        </p>
-                        </dt></dl>
-                    <dl id="cata-group-2" class="cata-group-btn">
-                        <dt class="cata-group-head"><a class="title">裙装</a>
-                        <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                        </dt></dl>
-                    <dl id="cata-group-3" class="cata-group-btn">
-                        <dt class="cata-group-head"><a class="title">裙装</a>
-                        <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                        </dt></dl>
-                    <dl id="cata-group-4" class="cata-group-btn">
-                        <dt class="cata-group-head last"><a class="title">裙装</a>
-                        <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                        </dt></dl>
-
+    </div>
+    <div id="header">
+        <div class="w-1000 Hui-wraper">
+            <div id="logo">
+                <a href="/">
+                    <img src="../../images/logo.jpg"></a>
+            </div>
+            <div id="search">
+                <ul id="shelper" class="hide" style="display: none;"></ul>
+                <div class="form">
+                    <input type="text" id="key" class="text"/>
+                    <button onclick="search('key');return false;" class="button"><i></i>搜索</button>
                 </div>
             </div>
+            <div id="settleup" class="dorpdown">
+                <div class="cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">23</i>
+                    <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+                </div>
+                <div class="dorpdown-layer">
+                    <div class="spacer"></div>
+                    <div id="settleup-content"><span class="loading"></span></div>
+                </div>
+            </div>
+            <div id="hotwords"><a href="http://sale.jd.com/act/PX5dGJnkeOrE.html" target="_blank" class="c-red">感恩母爱</a><a
+                    href="http://sale.jd.com/act/m78TMePNrXuD.html" target="_blank">下单有礼</a><a
+                    href="http://sale.jd.com/act/Mimgrc6dAp.html" target="_blank">小家电9.9</a><a
+                    href="http://sale.jd.com/act/jdvGTzwM5oQ.html" target="_blank">一元秒杀</a><a
+                    href="http://sale.jd.com/act/sGOxmJRih1j.html" target="_blank">自营家纺</a><a
+                    href="http://sale.jd.com/act/YPkN5glLtiIVdU.html" target="_blank">手机99起</a><a
+                    href="http://sale.jd.com/act/n5iHr80u7dCQ.html?cpdad=1DLSUE" target="_blank">女性必读</a><a
+                    href="http://sale.jd.com/act/sF0MOrQkByRhjVbY.html?from=jdpopser_jr" target="_blank">199减50</a><a
+                    href="http://sale.jd.com/act/gp3mfCzSud.html" target="_blank">机票秒杀</a></div>
         </div>
-        <div class="col-md-7">
-
-        <div class="col-md-1"></div>
     </div>
-</div>
+    <div class="clearfix"></div>
+    <div id="navbar">
+        <div class="w-1000 Hui-wraper cl">
+            <div id="categorys" class="dorpdown" data-load="1">
+                <div class="dt" clstag="h|keycount|2015|05a">
+                    <a target="_blank" href="http://www.jd.com/allSort.aspx">全部商品分类</a>
+                </div>
+                <div class="dd">
+                    <div class="cata">
+                        <div class="cata-group">
+                            <dl id="cata-group-1" class="cata-group-btn">
+                                <dt class="cata-group-head"><a class="title">上衣</a>
+                                <p><a>外套</a><a>大衣</a><a>风衣</a><a>毛衣</a><a>卫衣</a><a>羽绒</a><a>棉衣</a>
+                                    <a>打底T</a><a>针织衫</a><a>衬衫</a><a>西装</a><a>短外套</a>
+                                </p>
+                                </dt></dl>
+                            <dl id="cata-group-2" class="cata-group-btn">
+                                <dt class="cata-group-head"><a class="title">裙装</a>
+                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                                </dt></dl>
+                            <dl id="cata-group-3" class="cata-group-btn">
+                                <dt class="cata-group-head"><a class="title">裙装</a>
+                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                                </dt></dl>
+                            <dl id="cata-group-4" class="cata-group-btn">
+                                <dt class="cata-group-head last"><a class="title">裙装</a>
+                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                                </dt></dl>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navitems">
+                <ul id="navitems" class="l">
+                    <li id="nav-fashion" class="fore1">
+                        <a target="_blank" href="http://channel.jd.com/fashion.html">服装城</a>
+                    </li>
+                    <liid
+                    ="nav-beauty" class="fore2">
+                    <a target="_blank" href="http://channel.jd.com/beauty.html">美妆馆</a>
+                    </li>
+                    <li id="nav-chaoshi" class="fore3">
+                        <a target="_blank" href="http://channel.jd.com/chaoshi.html">美食</a>
+                    </li>
+                    <li id="nav-jdww" class="fore4">
+                        <a target="_blank" href="http://www.jd.hk/">全球购</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="clearfix"></div>
+<div></div>
+<footer>
 
-<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
-<script src="../../js/jquery-1.11.3.min.js"></script>
-
-<script src="../../js/script.js"></script>
-<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用 -->
-<script src="../../js/bootstrap.min.js"></script>
+</footer>
+<script type="text/javascript" src="../../h-ui/lib/jquery.min.js"></script>
+<script type="text/javascript" src="../../h-ui/js/h-ui.js"></script>
 </body>
-</html>

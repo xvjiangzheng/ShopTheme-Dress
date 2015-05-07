@@ -54,3 +54,51 @@
     border-bottom: 0;
     padding: 10px 0;
 }
+
+.indexPic {
+    margin-left: -30px;
+    margin-top: 10px;
+}
+
+#onefloor {
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#onefloor h3 {
+    border-image: none;
+    border-style: none;
+    background: url(../images/img-floor.jpg);
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 53px;
+    border-left: none;
+    border-right: 0;
+    font-weight: normal;
+}
+
+#onefloor .zt_block{
+    width: 100%;
+    overflow: hidden;
+}
+
+#onefloor h3 a{
+    color: #797979;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#onefloor h3 span {
+    color: #FFF;
+    float: left;
+    padding: 0 40px 0 68px;
+    font: normal 26px/53px 'Microsoft Yahei';
+    letter-spacing: 4px;
+    width: 260px;
+}
+
+#nvrenList dl{
+    padding: 10px 10px 0 0;
+}
