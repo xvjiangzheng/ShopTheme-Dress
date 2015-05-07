@@ -140,14 +140,14 @@
     float: left;
     position: relative;
     z-index: 10;
-    width: 210px;
+    width: 240px;
     height: 44px;
     overflow: visible;
 }
 
 #categorys .dt a {
     display: block;
-    width: 190px;
+    width: 220px;
     height: 44px;
     padding: 0 10px;
     background: #B1191A;
@@ -177,7 +177,7 @@
 }
 
 .cata-group dl dt {
-    width: 80%;
+    width: 200px;
     margin: 0 auto;
     padding: 17px 0;
     border-bottom: 1px dashed #d0d0d0;
