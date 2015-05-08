@@ -15,22 +15,23 @@
     position: relative;
     z-index: 12;
     float: left;
-    width: 250px;
+    width: 270px;
     height: 60px;
     padding: 20px 0;
+    margin-right: 60px;
 }
 
 #header #search {
     position: relative;
     z-index: 11;
     float: left;
-    width: 462px;
+    width: auto;
     margin-top: 25px;
 }
 
 #search .text {
     float: left;
-    width: 370px;
+    width: 446px;
     height: 24px;
     line-height: 24px;
     color: #666;
@@ -120,7 +121,7 @@
 
 #header #hotwords {
     float: left;
-    width: 462px;
+    width: 518px;
     height: 20px;
     line-height: 20px;
     overflow: hidden;
@@ -157,9 +158,9 @@
 }
 
 #categorys .dd {
-    height: 466px;
-    background: #c81623;
+    height: 468px;
     margin-top: 2px;
+    overflow: hidden;
 }
 
 .cata {
@@ -179,7 +180,7 @@
 .cata-group dl dt {
     width: 200px;
     margin: 0 auto;
-    padding: 17px 0;
+    padding: 13px 0;
     border-bottom: 1px dashed #d0d0d0;
 }
 
@@ -235,3 +236,21 @@
     font: 400 15px/44px "microsoft yahei";
     color: #333;
 }
+
+#footer{ border-top:2px solid #e33b3d; background:url(../images/bottomBg.jpg) repeat-x bottom #FFF; margin-top:40px;}
+#footer .box1210{ width:1082px; padding-left:128px;}
+.footerBox{ padding:18px 0;}
+
+.footerBox{ float:left; padding-left:52px; width:148px;}
+.footerBox h3{ font-size:14px; color:#e33b3d;}
+.footerBox a{ color:#6a6a6a; display:block;}
+.footerBox a:hover{color:#e33b3d;}
+
+
+.footerB{ border-top:1px solid #ddd; padding-top:10px;}
+#footerB{padding-bottom:30px;text-align:center}
+#footerB div{text-align:center}
+#footerB .links { text-align:center;}
+#footerB .links a,#footerB .links span{margin:0 10px}
+#footerB .links span a{margin:0}
+#footerB .copyright{margin:10px 0; text-align:center;}

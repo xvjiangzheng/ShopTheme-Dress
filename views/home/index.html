@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     <title>网站标题，控制在25个字、50个字节以内</title>
     <meta name="keywords" content="关键词,5个左右,单个8汉字以内">
     <meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
@@ -23,11 +22,12 @@
     <script>DD_belatedPNG.fix('.pngfix,.icon');</script>
     <![endif]-->
     <link href="../../css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/home.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <header id="comminHeader">
-    <div id="headerBar">
-        <div class="text-l w-1000 Hui-wraper cl">
+    <div id="headerBar" class="w-1200 Hui-wraper">
+        <div class="text-l">
             欢迎访问 BrnShop开源网上商城
             <ul class="f-r">
                 <li><a href="/account/login?returnUrl=http%3A%2F%2Flocalhost%3A27008%2F">[登录]</a>
@@ -37,98 +37,305 @@
             </ul>
         </div>
     </div>
-    <div id="header">
-        <div class="w-1000 Hui-wraper">
-            <div id="logo">
-                <a href="/">
-                    <img src="../../images/logo.jpg"></a>
-            </div>
-            <div id="search">
-                <ul id="shelper" class="hide" style="display: none;"></ul>
-                <div class="form">
-                    <input type="text" id="key" class="text"/>
-                    <button onclick="search('key');return false;" class="button"><i></i>搜索</button>
-                </div>
-            </div>
-            <div id="settleup" class="dorpdown">
-                <div class="cw-icon">
-                    <i class="ci-left"></i>
-                    <i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">23</i>
-                    <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
-                </div>
-                <div class="dorpdown-layer">
-                    <div class="spacer"></div>
-                    <div id="settleup-content"><span class="loading"></span></div>
-                </div>
-            </div>
-            <div id="hotwords"><a href="http://sale.jd.com/act/PX5dGJnkeOrE.html" target="_blank" class="c-red">感恩母爱</a><a
-                    href="http://sale.jd.com/act/m78TMePNrXuD.html" target="_blank">下单有礼</a><a
-                    href="http://sale.jd.com/act/Mimgrc6dAp.html" target="_blank">小家电9.9</a><a
-                    href="http://sale.jd.com/act/jdvGTzwM5oQ.html" target="_blank">一元秒杀</a><a
-                    href="http://sale.jd.com/act/sGOxmJRih1j.html" target="_blank">自营家纺</a><a
-                    href="http://sale.jd.com/act/YPkN5glLtiIVdU.html" target="_blank">手机99起</a><a
-                    href="http://sale.jd.com/act/n5iHr80u7dCQ.html?cpdad=1DLSUE" target="_blank">女性必读</a><a
-                    href="http://sale.jd.com/act/sF0MOrQkByRhjVbY.html?from=jdpopser_jr" target="_blank">199减50</a><a
-                    href="http://sale.jd.com/act/gp3mfCzSud.html" target="_blank">机票秒杀</a></div>
+    <div id="header" class="w-1200 Hui-wraper">
+        <div id="logo">
+            <a href="/">
+                <img src="../../images/logo.jpg"></a>
         </div>
+        <div id="search">
+            <ul id="shelper" class="hide" style="display: none;"></ul>
+            <div class="form">
+                <input type="text" id="key" class="text"/>
+                <button onclick="search('key');return false;" class="button"><i></i>搜索</button>
+            </div>
+        </div>
+        <div id="settleup" class="dorpdown">
+            <div class="cw-icon">
+                <i class="ci-left"></i>
+                <i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">23</i>
+                <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+            </div>
+            <div class="dorpdown-layer">
+                <div class="spacer"></div>
+                <div id="settleup-content"><span class="loading"></span></div>
+            </div>
+        </div>
+        <div id="hotwords"><a href="http://sale.jd.com/act/PX5dGJnkeOrE.html" target="_blank" class="c-red">感恩母爱</a><a
+                href="http://sale.jd.com/act/m78TMePNrXuD.html" target="_blank">下单有礼</a><a
+                href="http://sale.jd.com/act/Mimgrc6dAp.html" target="_blank">小家电9.9</a><a
+                href="http://sale.jd.com/act/jdvGTzwM5oQ.html" target="_blank">一元秒杀</a><a
+                href="http://sale.jd.com/act/sGOxmJRih1j.html" target="_blank">自营家纺</a><a
+                href="http://sale.jd.com/act/YPkN5glLtiIVdU.html" target="_blank">手机99起</a><a
+                href="http://sale.jd.com/act/n5iHr80u7dCQ.html?cpdad=1DLSUE" target="_blank">女性必读</a><a
+                href="http://sale.jd.com/act/sF0MOrQkByRhjVbY.html?from=jdpopser_jr" target="_blank">199减50</a><a
+                href="http://sale.jd.com/act/gp3mfCzSud.html" target="_blank">机票秒杀</a></div>
     </div>
     <div class="clearfix"></div>
-    <div id="navbar">
-        <div class="w-1000 Hui-wraper cl">
-            <div id="categorys" class="dorpdown" data-load="1">
-                <div class="dt" clstag="h|keycount|2015|05a">
-                    <a target="_blank" href="http://www.jd.com/allSort.aspx">全部商品分类</a>
-                </div>
-                <div class="dd">
-                    <div class="cata">
-                        <div class="cata-group">
-                            <dl id="cata-group-1" class="cata-group-btn">
-                                <dt class="cata-group-head"><a class="title">上衣</a>
-                                <p><a>外套</a><a>大衣</a><a>风衣</a><a>毛衣</a><a>卫衣</a><a>羽绒</a><a>棉衣</a>
-                                    <a>打底T</a><a>针织衫</a><a>衬衫</a><a>西装</a><a>短外套</a>
-                                </p>
-                                </dt></dl>
-                            <dl id="cata-group-2" class="cata-group-btn">
-                                <dt class="cata-group-head"><a class="title">裙装</a>
-                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                                </dt></dl>
-                            <dl id="cata-group-3" class="cata-group-btn">
-                                <dt class="cata-group-head"><a class="title">裙装</a>
-                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                                </dt></dl>
-                            <dl id="cata-group-4" class="cata-group-btn">
-                                <dt class="cata-group-head last"><a class="title">裙装</a>
-                                <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
-                                </dt></dl>
+    <div id="navbar" class="w-1200 Hui-wraper">
+        <div id="categorys" class="dorpdown" data-load="1">
+            <div class="dt" clstag="h|keycount|2015|05a">
+                <a target="_blank" href="http://www.jd.com/allSort.aspx">全部商品分类</a>
+            </div>
+            <div class="dd">
+                <div class="cata">
+                    <div class="cata-group">
+                        <dl id="cata-group-1" class="cata-group-btn">
+                            <dt class="cata-group-head"><a class="title">上衣</a>
+                            <p><a>外套</a><a>大衣</a><a>风衣</a><a>毛衣</a><a>卫衣</a><a>羽绒</a><a>棉衣</a>
+                                <a>打底T</a><a>针织衫</a><a>衬衫</a><a>西装</a><a>短外套</a>
+                            </p>
+                            </dt></dl>
+                        <dl id="cata-group-2" class="cata-group-btn">
+                            <dt class="cata-group-head"><a class="title">裙装</a>
+                            <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                            </dt></dl>
+                        <dl id="cata-group-3" class="cata-group-btn">
+                            <dt class="cata-group-head"><a class="title">裙装</a>
+                            <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                            </dt></dl>
+                        <dl id="cata-group-4" class="cata-group-btn">
+                            <dt class="cata-group-head last"><a class="title">裙装</a>
+                            <p><a>新品</a><a>连衣裙</a><a>半裙</a><a>毛呢连衣裙</a><a>长袖连衣裙</a><a>背心裙</a><a>长裙</a></p>
+                            </dt></dl>
 
-                        </div>
                     </div>
                 </div>
             </div>
-            <div id="navitems">
-                <ul id="navitems" class="l">
-                    <li id="nav-fashion" class="fore1">
-                        <a target="_blank" href="http://channel.jd.com/fashion.html">服装城</a>
-                    </li>
-                    <liid
-                    ="nav-beauty" class="fore2">
+        </div>
+        <div id="navitems">
+            <ul id="navitems-group" class="l">
+                <li id="nav-fashion" class="fore1">
+                    <a target="_blank" href="http://channel.jd.com/fashion.html">服装城</a>
+                </li>
+                <li id="nav-beauty" class="fore2">
                     <a target="_blank" href="http://channel.jd.com/beauty.html">美妆馆</a>
-                    </li>
-                    <li id="nav-chaoshi" class="fore3">
-                        <a target="_blank" href="http://channel.jd.com/chaoshi.html">美食</a>
-                    </li>
-                    <li id="nav-jdww" class="fore4">
-                        <a target="_blank" href="http://www.jd.hk/">全球购</a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+                <li id="nav-chaoshi" class="fore3">
+                    <a target="_blank" href="http://channel.jd.com/chaoshi.html">美食</a>
+                </li>
+                <li id="nav-jdww" class="fore4">
+                    <a target="_blank" href="http://www.jd.hk/">全球购</a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
 <div class="clearfix"></div>
-<div></div>
-<footer>
+<div id="focus" class="w-1200 Hui-wraper">
+    <div class="slider">
+        <ul class="slider-main" style="position: relative;">
+            <li class="slider-panel slider-panel-selected" style="position: absolute; z-index: 1; opacity: 1;">
+                <a target="_blank"> <img width="730" height="455" alt=""
+                                         src="http://img30.360buyimg.com/da/jfs/t703/132/1515859510/83921/610d5d16/55408ebcN6343bc33.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="w-1200 Hui-wraper" id="focus-extra">
+    <div id="news" class="m">
+        <div class="mt">
+            <h2 class="l">京东快报</h2>
 
+            <div class="r"><a target="_blank" href="http://www.jd.com/moreSubject.aspx"
+                              clstag="h|keycount|2015|09a">更多 &gt;</a></div>
+        </div>
+        <div class="mc">
+            <ul>
+                <li><a target="_blank" href="http://sale.jd.com/act/u1KCgRBrSGL70iZ.html"><span>[特惠]</span>斯凯奇折扣季
+                    鞋履2折起 </a></li>
+                <li><a target="_blank" href="http://www.jd.com/news.aspx?id=24194"><span>[公告]</span>兰州仓即将开启运营啦</a>
+                </li>
+                <li><a target="_blank"
+                                                     href="http://sale.jd.com/act/DuOIykrTzBFgH.html"><span>[特惠]</span>西北同庆兰州开仓
+                    特惠专场</a></li>
+                <li><a target="_blank" href="http://www.jd.com/news.aspx?id=24176"><span>[公告]</span>财经大咖教你投资
+                    相约5月9日</a></li>
+                <li><a target="_blank" href="http://sale.jd.com/mall/m8HRo3CIsYvi.html"
+                                                     se_prerender_url="complete"><span>[特惠]</span>新农哥品质坚果低至2折免邮</a></li>
+                <li><a target="_blank" href="http://sale.jd.com/mall/m8HRo3CIsYvi.html"
+                       se_prerender_url="complete"><span>[特惠]</span>新农哥品质坚果低至2折免邮</a></li>
+                <li><a target="_blank" href="http://sale.jd.com/mall/m8HRo3CIsYvi.html"
+                       se_prerender_url="complete"><span>[特惠]</span>新农哥品质坚果低至2折免邮</a></li>
+                <li><a target="_blank" href="http://sale.jd.com/mall/m8HRo3CIsYvi.html"
+                       se_prerender_url="complete"><span>[特惠]</span>新农哥品质坚果低至2折免邮</a></li>
+                <li><a target="_blank" href="http://sale.jd.com/mall/m8HRo3CIsYvi.html"
+                       se_prerender_url="complete"><span>[特惠]</span>新农哥品质坚果低至2折免邮</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="newsdown" class="indexAd right">
+        <a href="/"><img
+                src="http://img14.360buyimg.com/n1/s130x130_g13/M02/03/0B/rBEhUlH3heAIAAAAAAIFznFX8iUAABjRwOjTnkAAgXm310.jpg"
+                width="225" height="160"></a>
+    </div>
+    <!--index_ok-->
+    <!--index_ok-->
+</div>
+<div id="body">
+    <div class="w-1200 Hui-wraper special special_primary">
+        <ul>
+            <li>
+                <a target="_blank" class="special_pic" href="">
+                    <img src="http://s7.mogucdn.com/pic/150430/1430388904709209_iezwmmlcmnrtemlfgazdambqgyyde_300x200.png"
+                         alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="special_pic" href="">
+                    <img src="http://s21.mogucdn.com/pic/150430/1430388752111077_ie2dkmjvg4zdemlfgazdambqgiyde_300x200.png"
+                         alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="special_pic" href="">
+                    <img src="http://s8.mogucdn.com/pic/150430/11c053_ieztezrsge4temlfgazdambqgyyde_300x200.png"
+                         alt="">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="special_pic" href="">
+                    <img src="http://s21.mogucdn.com/pic/150430/11c053_ie2wkodbheztemlfgazdambqhayde_300x200.png"
+                         alt="">
+                </a>
+            </li>
+        </ul>
+        <!-- 首页首屏专题列表 *4 -->
+    </div>
+    <div class="w-1200 Hui-wraper mt-50 category" id="cloth">
+        <div class="topbar"><h3 class="topbar_cloth"><span>1F 上衣</span></h3>
+
+            <div class="topbar_link"><a target="_blank"
+                                        href="http://www.mogujie.com/book/clothing/17777?from=hpc_4#category_all">春季新品</a>
+                <a target="_blank" href="http://www.mogujie.com/book/clothing/18057?from=hpc_4#category_all">T恤</a> <a
+                        target="_blank"
+                        href="http://www.mogujie.com/book/clothing/17847?from=hpc_4#category_all">薄外套</a> <a
+                        target="_blank"
+                        href="http://www.mogujie.com/book/clothing/16125?from=hpc_4#category_all">时尚套装</a> <a
+                        target="_blank" href="http://www.mogujie.com/book/clothing/16497?from=hpc_4#category_all">衬衫</a>
+                <a target="_blank" href="http://www.mogujie.com/book/clothing/16742?from=hpc_4#category_all">卫衣</a> <a
+                        target="_blank"
+                        href="http://www.mogujie.com/book/clothing/16072/?from=hpc_4#category_all">更多</a></div>
+            <!-- 区块头部横条链接 --></div>
+        <!-- 蘑菇街首页-区块头部横条 -->
+        <div class="mt-30">
+            <ul class="f-l category_list">
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/18057?fId=16q803k&amp;from=hpc_5#category_all"><img
+                        src="http://s17.mogucdn.com/b7/pic/150306/126nhf_iezdgndchazdanldmyytambqmmyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/18057?fId=16q803k&amp;from=hpc_5#category_all">韩版卡通印花T恤</a>
+                </p><!-- 标题 --><p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>56</span></p>
+                    <!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/18691?fId=16rd4mk&amp;from=hpc_5#category_all"><img
+                        src="http://s20.mogucdn.com/b7/pic/150325/lkc5f_ieytgmrxgi2tanrsgazdambqmeyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/18691?fId=16rd4mk&amp;from=hpc_5#category_all">柒丫头
+                    春装新款无袖打底雪纺衫</a></p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>38.5</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/17433?fId=17m4988&amp;from=hpc_5#category_all"><img
+                        src="http://s20.mogucdn.com/b7/pic/150403/15g3db_ie2dayrrhfqwkmrvgazdambqgiyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/17433?fId=17m4988&amp;from=hpc_5#category_all">大牌超仙不规则下摆雪纺衫</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>39.9</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li"><a target="_blank" class="category_pic"
+                                           href="/book/clothing/16858?fId=16q6ps8&amp;from=hpc_5#category_all"><img
+                        src="http://s18.mogucdn.com/b7/pic/150305/11z44i_ieytam3cmfrgeztcmyytambqmeyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/16858?fId=16q6ps8&amp;from=hpc_5#category_all">薄款外套风衣外套</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>126.7</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li"><a target="_blank" class="category_pic"
+                                           href="/book/clothing/16858?fId=16q6ps8&amp;from=hpc_5#category_all"><img
+                        src="http://s18.mogucdn.com/b7/pic/150305/11z44i_ieytam3cmfrgeztcmyytambqmeyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/16858?fId=16q6ps8&amp;from=hpc_5#category_all">薄款外套风衣外套</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>126.7</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/16125?fId=16nq5di&amp;from=hpc_5#category_all"><img
+                        src="http://s16.mogucdn.com/b7/pic/150313/14nvje_ie2winlggq2tcytfmyytambqhayde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/16125?fId=16nq5di&amp;from=hpc_5#category_all">小清新蕾丝上衣+短裤套装</a>
+                </p><!-- 标题 --><p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>85</span></p>
+                    <!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/17433?fId=16q6su8&amp;from=hpc_5#category_all"><img
+                        src="http://s18.mogucdn.com/b7/pic/150305/uasu0_ieztanzxgizgiztcmyytambqgyyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/17433?fId=16q6su8&amp;from=hpc_5#category_all">2015早春精美蕾丝衫</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>64.4</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/18691?fId=17m4esy&amp;from=hpc_5#category_all"><img
+                        src="http://s17.mogucdn.com/b7/pic/150403/11jm8u_ie2dizbrgy4tanbvgazdambqgiyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/18691?fId=17m4esy&amp;from=hpc_5#category_all">【咪咕家】欧美摇滚头像宽松背心</a>
+                </p><!-- 标题 --><p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>35</span></p>
+                    <!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li "><a target="_blank" class="category_pic"
+                                            href="/book/clothing/16968?fId=17n5xak&amp;from=hpc_5#category_all"><img
+                        src="http://s18.mogucdn.com/b7/pic/150418/14w7yy_iezdkztemqztkmlbgazdambqmmyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/16968?fId=17n5xak&amp;from=hpc_5#category_all">【壹加壹部落】情侣裙子套装</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>45.5</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <li class="category_li hide_li"><a target="_blank" class="category_pic"
+                                                   href="/book/clothing/18057?fId=17nlaq2&amp;from=hpc_5#category_all"><img
+                        src="http://s7.mogucdn.com/b7/pic/150424/1jatk2_iezwiobvmzsdimtdgazdambqgyyde_640x960.jpg_220x330.jpg"
+                        alt=""></a><!-- 图片 --><p class="category_title"><a target="_blank"
+                                                                           href="/book/clothing/18057?fId=17nlaq2&amp;from=hpc_5#category_all">韩版鲜花花朵花瓶刺绣T恤</a>
+                </p><!-- 标题 --><p class="category_info"><span
+                        class="txt_nowprice info_nowprice"><i>¥</i>55.3</span></p><!-- 信息 --><!-- 双十一标签 --></li>
+                <!-- 类目列表广告项 --></ul>
+            <!-- 类目列表 *10 --></div>
+    </div>
+</div>
+<footer>
+    <div id="footer" class="w-1200 Hui-wraper">
+        <div class="box1210">
+            <div class="footerBox"><h3>购物指南</h3>
+                <a href="/help/question?id=7">购物流程</a>
+                <a href="/help/question?id=8">会员介绍</a>
+            </div>
+            <div class="footerBox"><h3>配送方式</h3>
+                <a href="/help/question?id=9">上门自提</a>
+                <a href="/help/question?id=10">211限时达</a>
+            </div>
+            <div class="footerBox"><h3>支付方式</h3>
+                <a href="/help/question?id=11">货到付款</a>
+                <a href="/help/question?id=12">在线支付</a>
+            </div>
+            <div class="footerBox"><h3>售后服务</h3>
+                <a href="/help/question?id=13">售后政策</a>
+                <a href="/help/question?id=14">取消订单</a>
+            </div>
+            <div class="footerBox"><h3>促销说明</h3>
+                <a href="/help/question?id=16">优惠劵</a>
+                <a href="/help/question?id=15">促销活动</a>
+            </div>
+
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="bigBox footerB">
+            <div id="footerB">
+                <div class="links">
+                </div>
+                <div>北京市公安局朝阳分局备案编号031143485246&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证047722号&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"
+                                                                                                                target="_blank">互联网药品信息服务资格证编号(京)-经营性-2012-0005</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大145218号<br>石家庄蝶影软件开发有限公司
+                    程序版本 2.1.609 版权所有 @2015, BrnShop.com Inc.
+                </div>
+                <div><a href="#"><img width="108" height="40" src="../../images/power_jy.gif"></a> <a
+                        href="#"><img width="108" height="40" src="../../images/power_kx.gif"></a> <a
+                        href="#"><img width="108" height="40" src="../../images/power_wj.png"></a> <a
+                        href="#"><img width="112" height="40" src="../../images/power_cx.png"></a></div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script type="text/javascript" src="../../h-ui/lib/jquery.min.js"></script>
 <script type="text/javascript" src="../../h-ui/js/h-ui.js"></script>

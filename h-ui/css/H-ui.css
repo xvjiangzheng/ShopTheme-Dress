@@ -362,6 +362,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 .ct3 .app{float:left;margin-right:20px}
 .ct3 .mn{float:left;border-left:solid 1px #ddd}
 .ct3 .sd{float:right}
+.w-1200{width:1200px}
 .w-1000{width:1000px}
 .w-980{width:980px}
 .w-300{width:300px}
